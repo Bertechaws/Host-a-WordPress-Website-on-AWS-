@@ -1,3 +1,6 @@
+![Alt Text](Html.png)
+
+---
 
 # WordPress Website Deployment on AWS
 
