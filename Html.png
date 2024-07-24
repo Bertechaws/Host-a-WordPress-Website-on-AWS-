@@ -1,0 +1,12 @@
+#! /bin/bash
+sudo su
+yum update -y
+yum install -y httpd
+cd /var/www/html
+wget https://github.com/Bertechaws/Host-HTML-site-via-aws 
+unzip main.zip
+unzip HTML-website-main/mole.zip
+cp -r mole-main/* /var/www/html
+rm -rf *.zip *.md HTML-website-main mole-main
+systemctl enable httpd
+systemctl start httpd
